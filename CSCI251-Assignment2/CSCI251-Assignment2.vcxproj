@@ -139,9 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Candidate.h" />
+    <ClInclude Include="Electorate.h" />
+    <ClInclude Include="Management.h" />
     <ClInclude Include="Party.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Candidate.cpp" />
+    <ClCompile Include="Electorate.cpp" />
+    <ClCompile Include="Management.cpp" />
     <ClCompile Include="Party.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

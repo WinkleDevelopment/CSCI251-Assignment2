@@ -8,7 +8,11 @@
 *
 */
 
-class Party {
-protected:
+#include "Candidate.h"
+
+class Electorate {
+private:
+	Candidate* candidate;
 public:
 };
+

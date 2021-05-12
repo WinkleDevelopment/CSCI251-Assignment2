@@ -8,7 +8,10 @@
 *
 */
 
-class Party {
+#include "Party.h"
+
+class Candidate : public Party {
 protected:
 public:
 };
+

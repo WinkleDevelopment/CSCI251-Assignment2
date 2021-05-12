@@ -8,7 +8,10 @@
 *
 */
 
-class Party {
-protected:
-public:
+#include "Candidate.h"
+
+class Management {
+private:
+
 };
+
