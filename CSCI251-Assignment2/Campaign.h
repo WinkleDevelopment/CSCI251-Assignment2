@@ -8,15 +8,19 @@
 *
 */
 
-#include "Election.h"
 #include "Libraries.h"
 #include "Event.h"
+#include "ElectionGenerator.h"
+#include "RandomEng.h"
+#include "Election.h"
 
 class Campaign {
 private:
 	unsigned int duration;
 	unsigned int currentDate;
 public:
+
+
 	unsigned int getDuration() { return duration; }
 	unsigned int getcurrentDate() { return currentDate; }
 

@@ -34,7 +34,6 @@ const unsigned int partyNum = 3;
 
 int main();
 
-
 /*DEATH_PENALTY,
 GENDER_IDENTITY,
 HATE_SPEECH,
