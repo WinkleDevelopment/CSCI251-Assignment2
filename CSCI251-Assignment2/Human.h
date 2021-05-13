@@ -10,7 +10,7 @@
 
 #include "Libraries.h"
 
-enum Characteristic {
+enum class Characteristic {
 	CONNECTION,
 	ECONOMIC_EXP,
 	ENVIRONMENTAL_EXP,

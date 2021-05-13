@@ -10,7 +10,7 @@
 
 #include "Libraries.h"
 
-enum IssueType {
+enum class IssueType {
 	ECONOMIC,
 	EDUCATION,
 	EMPLOYMENT,
@@ -28,5 +28,10 @@ public:
 	Issue(string, IssueType, string);
 	~Issue();
 	Issue(const Issue& copyIssue);
+
+	string getCode() { return code; }
+	IssueType getIssueType() { return type; }
+	string getStatement() { return statement; }
+
 };
 

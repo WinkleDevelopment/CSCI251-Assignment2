@@ -15,6 +15,11 @@ class Candidate : public Human {
 private:
 	int voteCount;
 public:
+	Candidate();
+	Candidate(map<Characteristic, float> characteristics, string areaRepresent, int) : Human(characteristics, areaRepresent) {}
+	~Candidate();
+	Candidate(const Candidate& copyCandidate);
+	
 	int getVoteCount() { return voteCount; }
 
 	void influenceElec(float);

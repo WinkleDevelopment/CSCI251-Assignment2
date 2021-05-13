@@ -17,6 +17,14 @@ private:
 	map<string, Candidate> candidates;
 	Human MngTeam;
 	unsigned int votes;
-
 public:
+	Party();
+	Party(Candidate, map<string, Candidate>, Human, unsigned int);
+	~Party();
+	Party(const Party& copyParty);
+
+	Candidate getLeader() { return leader; }
+	map<string, Candidate> getCandidates() { return candidates; }
+	Human getMngTeam() { return MngTeam; }
+	unsigned int getVotes() { return votes; }
 };

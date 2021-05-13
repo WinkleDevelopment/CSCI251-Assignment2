@@ -15,8 +15,12 @@ class ManagerialTeam : public Human {
 private:
 	float eventImpact;
 public:
-	float getEventImpact() { return eventImpact; }
+	ManagerialTeam();
+	ManagerialTeam(map<Characteristic, float> characteristics, string areaRepresent, float) : Human(characteristics, areaRepresent) {}
+	~ManagerialTeam();
+	ManagerialTeam(const ManagerialTeam& copyManagerialTeam);
 
+	float getEventImpact() { return eventImpact; }
 	void eventHandle(float, float);
 };
 

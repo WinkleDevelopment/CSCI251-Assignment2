@@ -23,7 +23,15 @@ public:
 	~Stance();
 	Stance(const Stance& copyStance);
 
+	float getApproach() { return approach; }
+	float getSignificant() { return significant; }
+	float getInfluentRadius() { return influentRadius; }
+	Issue getIssue() { return issue; }
 
+	void updateRadius(int);
+	void changeSignificant(float);
+	void chnageApproach(float);
+	float difference(Stance);
 
 };
 
