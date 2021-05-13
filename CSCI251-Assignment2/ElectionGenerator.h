@@ -8,12 +8,13 @@
 *
 */
 
+#pragma once // <---- God Send
+#include "Libraries.h"
 #include "Party.h"
 #include "Electorate.h"
 #include "ManagerialTeam.h"
 #include "Event.h"
 #include "RandomEng.h"
-#include "Libraries.h"
 
 class ElectionGenerator {
 private:

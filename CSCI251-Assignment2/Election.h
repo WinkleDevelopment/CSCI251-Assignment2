@@ -8,9 +8,12 @@
 *
 */
 
+#pragma once
+#include "Libraries.h"
 #include "Party.h"
 #include "Electorate.h"
-#include "Libraries.h"
+//#include "ElectionGenerator.h"
+#include "Campaign.h"
 
 class Election {
 private:
@@ -20,11 +23,16 @@ private:
 	vector<Electorate> electorates;
 	Campaign campaign;
 public:
+	Election();
+	Election(const static unsigned int, unsigned int, vector<Party>, vector<Electorate>, Campaign);
+	~Election();
+	Election(const Election& copyElection);
+
 	unsigned int getPartyNum() { return partyNum; }
 	unsigned int getElectorateNum() { return electorateNum; }
 	vector<Party> getParties() { return parties; }
 	vector<Electorate> getElectorate() { return electorates; }
-	Campaign getCampign() { return campaign; }
+	Campaign getCampaign() { return campaign; }
 
 	void partyReport();
 	void electorateReport();

@@ -8,6 +8,7 @@
 *
 */
 
+#pragma once
 #include "Libraries.h"
 
 enum class Characteristic {

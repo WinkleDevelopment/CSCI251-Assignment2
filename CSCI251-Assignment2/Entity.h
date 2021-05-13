@@ -8,6 +8,7 @@
 *
 */
 
+#pragma once
 #include "Libraries.h"
 #include "Stance.h"
 

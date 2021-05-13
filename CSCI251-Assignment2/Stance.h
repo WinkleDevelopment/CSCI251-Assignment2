@@ -8,6 +8,7 @@
 *
 */
 
+#pragma once
 #include "Issue.h"
 #include "Libraries.h"
 

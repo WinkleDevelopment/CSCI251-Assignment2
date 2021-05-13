@@ -8,6 +8,7 @@
 *
 */
 
+#pragma once
 #include "Candidate.h"
 #include "Libraries.h"
 

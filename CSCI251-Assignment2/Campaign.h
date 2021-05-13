@@ -8,8 +8,8 @@
 *
 */
 
+#pragma once
 #include "Libraries.h"
-#include "Event.h"
 #include "ElectionGenerator.h"
 #include "RandomEng.h"
 #include "Election.h"
@@ -19,7 +19,10 @@ private:
 	unsigned int duration;
 	unsigned int currentDate;
 public:
-
+	Campaign();
+	Campaign(unsigned int, unsigned int);
+	~Campaign();
+	Campaign(const Campaign& copyCampaign);
 
 	unsigned int getDuration() { return duration; }
 	unsigned int getcurrentDate() { return currentDate; }

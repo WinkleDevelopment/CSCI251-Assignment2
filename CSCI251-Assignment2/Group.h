@@ -8,6 +8,7 @@
 *
 */
 
+#pragma once
 #include "Entity.h"
 #include "Libraries.h"
 

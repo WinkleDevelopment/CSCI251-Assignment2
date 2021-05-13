@@ -8,10 +8,10 @@
 *
 */
 
+#pragma once
 #include "Libraries.h"
 
 class RandomEng {
-public:
 	default_random_engine randEng;
 
 	int randInt(int min, int max) {

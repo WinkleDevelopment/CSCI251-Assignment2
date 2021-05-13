@@ -8,6 +8,7 @@
 *
 */
 
+#pragma once
 #include "Group.h"
 #include "Libraries.h"
 
@@ -18,7 +19,7 @@ private:
 	unsigned int population;
 public:
 	Electorate();
-	Electorate(string name, vector<Stance> stanceValues, unsigned int popul, string, map<string, Group>, unsigned int) : Group(name, stanceValues, population) {}
+	Electorate(string name, vector<Stance> stanceValues, unsigned int popul, string, map<string, Group>, unsigned int) : Group(name, stanceValues, popul) {}
 	~Electorate();
 	Electorate(const Electorate& copyElectorate);
 
