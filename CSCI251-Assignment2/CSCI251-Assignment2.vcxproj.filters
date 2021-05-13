@@ -24,7 +24,28 @@
     <ClInclude Include="Electorate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Management.h">
+    <ClInclude Include="ManagerialTeam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Campaign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Election.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Human.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Issue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,7 +59,25 @@
     <ClCompile Include="Electorate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Management.cpp">
+    <ClCompile Include="ManagerialTeam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Campaign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Election.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Human.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Issue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

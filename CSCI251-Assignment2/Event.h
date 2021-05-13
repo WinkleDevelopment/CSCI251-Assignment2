@@ -8,10 +8,9 @@
 *
 */
 
-#include "Candidate.h"
+#include "Libraries.h"
 
-class Management {
+class Event {
 private:
-
 };
 

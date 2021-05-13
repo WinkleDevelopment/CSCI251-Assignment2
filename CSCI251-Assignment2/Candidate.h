@@ -8,10 +8,16 @@
 *
 */
 
-#include "Party.h"
+#include "Human.h"
+#include "Libraries.h"
 
-class Candidate : public Party {
-protected:
+class Candidate : public Human {
+private:
+	int voteCount;
 public:
+	int getVoteCount() { return voteCount; }
+
+	void influenceElec(float);
+	void updateVote(int);
 };
 

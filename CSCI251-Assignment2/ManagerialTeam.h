@@ -8,14 +8,15 @@
 *
 */
 
-#include "Candidate.h"
+#include "Human.h"
 #include "Libraries.h"
 
-class Electorate {
+class ManagerialTeam : public Human {
 private:
-	Candidate* candidate;
-	Issue issue;
+	float eventImpact;
 public:
+	float getEventImpact() { return eventImpact; }
 
+	void eventHandle(float, float);
 };
 

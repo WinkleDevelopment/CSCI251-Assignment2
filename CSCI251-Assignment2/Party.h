@@ -8,7 +8,15 @@
 *
 */
 
+#include "Candidate.h"
+#include "Libraries.h"
+
 class Party {
-protected:
+private:
+	Candidate leader;
+	map<string, Candidate> candidates;
+	Human MngTeam;
+	unsigned int votes;
+
 public:
 };

@@ -139,16 +139,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Campaign.h" />
     <ClInclude Include="Candidate.h" />
+    <ClInclude Include="Election.h" />
     <ClInclude Include="Electorate.h" />
-    <ClInclude Include="Management.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="Human.h" />
+    <ClInclude Include="Issue.h" />
+    <ClInclude Include="Libraries.h" />
+    <ClInclude Include="ManagerialTeam.h" />
     <ClInclude Include="Party.h" />
+    <ClInclude Include="Stance.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Campaign.cpp" />
     <ClCompile Include="Candidate.cpp" />
+    <ClCompile Include="Election.cpp" />
     <ClCompile Include="Electorate.cpp" />
-    <ClCompile Include="Management.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="Human.cpp" />
+    <ClCompile Include="Issue.cpp" />
+    <ClCompile Include="ManagerialTeam.cpp" />
     <ClCompile Include="Party.cpp" />
+    <ClCompile Include="Stance.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
