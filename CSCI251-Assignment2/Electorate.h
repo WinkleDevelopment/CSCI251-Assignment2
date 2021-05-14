@@ -18,7 +18,7 @@ private:
 	map<string, Group> groups;
 public:
 	Electorate();
-	Electorate(string _name, vector<Stance> _stanceValues, unsigned int _population, string, map<string, Group>) : Group(_name, _stanceValues, _population) {}
+	Electorate(string _name, vector<Stance> _stanceValues, unsigned int _population, string, map<string, Group>);
 	~Electorate();
 	Electorate(const Electorate& copyElectorate);
 

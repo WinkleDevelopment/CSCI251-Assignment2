@@ -11,18 +11,18 @@
 #pragma once
 #include "Libraries.h"
 
-class RandomEng {
-	default_random_engine randEng;
-
-	int randInt(int min, int max) {
-		int result;
-		uniform_int_distribution<int> dist(min, max);
-		return result = dist(randEng);
-	}
-
-	float randFloat(float min, float max) {
-		float result;
-		uniform_int_distribution<float> dist(min, max);
-		return result = dist(randEng);
-	}
-};
+//class RandomEng {
+//	default_random_engine randEng;
+//
+//	int randInt(int min, int max) {
+//		int result;
+//		uniform_int_distribution<int> dist(min, max);
+//		return result = dist(randEng);
+//	}
+//
+//	float randFloat(float min, float max) {
+//		float result;
+//		uniform_int_distribution<float> dist(min, max);
+//		return result = dist(randEng);
+//	}
+//};

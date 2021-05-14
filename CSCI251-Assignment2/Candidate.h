@@ -17,7 +17,7 @@ private:
 	int voteCount = 0;
 public:
 	Candidate();
-	Candidate(map<Characteristic, float> _characteristics, string _areaRepresent, int) : Human(_characteristics, _areaRepresent) {}
+	Candidate(map<Characteristic, float> _characteristics, string _areaRepresent, int);
 	~Candidate();
 	Candidate(const Candidate& copyCandidate);
 	

@@ -17,7 +17,7 @@ protected:
 	unsigned int population = 0;
 public:
 	Group();
-	Group(string _name, vector<Stance> _stanceValues, unsigned int) : Entity(_name, _stanceValues) {}
+	Group(string _name, vector<Stance> _stanceValues, unsigned int);
 	~Group();
 	Group(const Group& copyGroup);
 

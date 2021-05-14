@@ -38,5 +38,7 @@ void Stance::changeSignificant(float) {}
 
 void Stance::chnageApproach(float) {}
 
-float Stance::difference(Stance) {}
+float Stance::difference(Stance) {
+	return 0;
+}
 
