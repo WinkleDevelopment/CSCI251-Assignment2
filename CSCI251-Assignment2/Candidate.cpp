@@ -13,10 +13,11 @@
 // Constructors
 Candidate::Candidate() {}
 
-Candidate::Candidate(map<Characteristic, float> _characteristics, string _areaRepresent, int _voteCount) : Human(_characteristics, _areaRepresent) {
+Candidate::Candidate(map<Characteristic, float> _characteristics, string _areaRepresent, int _voteCount, int _popularity) : Human(_characteristics, _areaRepresent) {
 	this->characteristics = _characteristics;
 	this->areaRepresent = _areaRepresent;
 	this->voteCount = _voteCount;
+	this->popularity = _popularity;
 }
 
 Candidate::~Candidate() {

@@ -10,17 +10,18 @@
 
 #pragma once
 #include "Candidate.h"
+#include "ManagerialTeam.h"
 #include "Libraries.h"
 
 class Party {
 private:
 	Candidate leader;
 	map<string, Candidate> candidates;
-	Human MngTeam;
+	ManagerialTeam MngTeam;
 	unsigned int votes;
 public:
 	Party();
-	Party(Candidate, map<string, Candidate>, Human, unsigned int);
+	Party(Candidate, map<string, Candidate>, ManagerialTeam, unsigned int);
 	~Party();
 	Party(const Party& copyParty);
 

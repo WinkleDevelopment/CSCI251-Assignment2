@@ -13,7 +13,7 @@
 // Constructors
 Party::Party() {}
 
-Party::Party(Candidate _leader, map<string, Candidate> _candidates, Human _MngTeam, unsigned int _votes) {
+Party::Party(Candidate _leader, map<string, Candidate> _candidates, ManagerialTeam _MngTeam, unsigned int _votes) {
 	this->leader = _leader;
 	this->candidates = _candidates;
 	this->MngTeam = _MngTeam;
