@@ -16,15 +16,13 @@ class Electorate : public Group {
 private:
 	string area;
 	map<string, Group> groups;
-	unsigned int population;
 public:
 	Electorate();
-	Electorate(string name, vector<Stance> stanceValues, unsigned int popul, string, map<string, Group>, unsigned int) : Group(name, stanceValues, popul) {}
+	Electorate(string _name, vector<Stance> _stanceValues, unsigned int _population, string, map<string, Group>) : Group(_name, _stanceValues, _population) {}
 	~Electorate();
 	Electorate(const Electorate& copyElectorate);
 
 	string getArea() { return area; }
 	map<string, Group> getGroups() { return groups; }
-	unsigned int getPopulation() { return population; }
 };
 

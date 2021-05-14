@@ -13,10 +13,22 @@
 // Constructors
 Party::Party() {}
 
-Party::Party(Candidate, map<string, Candidate>, Human, unsigned int) {}
+Party::Party(Candidate _leader, map<string, Candidate> _candidates, Human _MngTeam, unsigned int _votes) {
+	this->leader = _leader;
+	this->candidates = _candidates;
+	this->MngTeam = _MngTeam;
+	this->votes = _votes;
+}
 
-Party::~Party() {}
+Party::~Party() {
+	cout << "Object Destoryed!" << endl;
+}
 
-Party::Party(const Party& copyParty) {}
+Party::Party(const Party& copyParty) {
+	this->leader = copyParty.leader;
+	this->candidates = copyParty.candidates;
+	this->MngTeam = copyParty.MngTeam;
+	this->votes = copyParty.votes;
+}
 
 // Methods

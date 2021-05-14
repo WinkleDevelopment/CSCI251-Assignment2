@@ -13,11 +13,23 @@
 // Constructors
 Election::Election() {}
 
-Election::Election(const static unsigned int, unsigned int, vector<Party>, vector<Electorate>, Campaign*) {}
+Election::Election(unsigned int _electorateNum, vector<Party> _parties, vector<Electorate> _electorates, Campaign* _campaign) {
+	this->electorateNum = _electorateNum;
+	this->parties = _parties;
+	this->electorates = _electorates;
+	this->campaign = _campaign;
+}
 
-Election::~Election() {}
+Election::~Election() {
+	cout << "Object Destoryed!" << endl;
+}
 
-Election::Election(const Election& copyElection) {}
+Election::Election(const Election& copyElection) {
+	this->electorateNum = copyElection.electorateNum;
+	this->parties = copyElection.parties;
+	this->electorates = copyElection.electorates;
+	this->campaign = copyElection.campaign;
+}
 
 
 // Methods

@@ -13,11 +13,21 @@
 // Constructors
 Issue::Issue() {}
 
-Issue::Issue(string, IssueType, string) {}
+Issue::Issue(string _code, IssueType _type, string _statement) {
+	this->code = _code;
+	this->type = _type;
+	this->statement = _statement;
+}
 
-Issue::Issue() {}
+Issue::~Issue() {
+	cout << "Object Destoryed!" << endl;
+}
 
-Issue::Issue(const Issue& copyIssue) {}
+Issue::Issue(const Issue& copyIssue) {
+	this->code = copyIssue.code;
+	this->type = copyIssue.type;
+	this->statement = copyIssue.statement;
+}
 
 // Methods
 

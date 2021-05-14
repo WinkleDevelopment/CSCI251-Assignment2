@@ -13,11 +13,11 @@
 #include "Libraries.h"
 
 class Group : public Entity {
-private:
-	unsigned int population;
+protected:
+	unsigned int population = 0;
 public:
 	Group();
-	Group(string name, vector<Stance> stanceValues, unsigned int) : Entity(name, stanceValues) {}
+	Group(string _name, vector<Stance> _stanceValues, unsigned int) : Entity(_name, _stanceValues) {}
 	~Group();
 	Group(const Group& copyGroup);
 

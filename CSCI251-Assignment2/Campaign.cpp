@@ -12,11 +12,19 @@
 // Constructors
 Campaign::Campaign() {}
 
-Campaign::Campaign(unsigned int, unsigned int) {}
+Campaign::Campaign(unsigned int _duration, unsigned int _currentDate) {
+	this->duration = _duration;
+	this->currentDate = _currentDate;
+}
 
-Campaign::~Campaign() {}
+Campaign::~Campaign() {
+	cout << "Object Destoryed!" << endl;
+}
 
-Campaign::Campaign(const Campaign& copyCampaign) {}
+Campaign::Campaign(const Campaign& copyCampaign) {
+	this->duration = copyCampaign.duration;
+	this->currentDate = copyCampaign.currentDate;
+}
 
 // Methods
 void Campaign::run(Election*) {}

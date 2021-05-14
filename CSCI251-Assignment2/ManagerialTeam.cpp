@@ -13,11 +13,21 @@
 // Constructors
 ManagerialTeam::ManagerialTeam() {}
 
-ManagerialTeam::ManagerialTeam(map<Characteristic, float> characteristics, string areaRepresent, float) : Human(characteristics, areaRepresent) {}
+ManagerialTeam::ManagerialTeam(map<Characteristic, float> _characteristics, string _areaRepresent, float _eventImpact) : Human(_characteristics, _areaRepresent) {
+	this->characteristics = _characteristics;
+	this->areaRepresent = _areaRepresent;
+	this->eventImpact = _eventImpact;
+}
 
-ManagerialTeam::~ManagerialTeam() {}
+ManagerialTeam::~ManagerialTeam() {
+	cout << "Object Destoryed!" << endl;
+}
 
-ManagerialTeam::ManagerialTeam(const ManagerialTeam& copyManagerialTeam) {}
+ManagerialTeam::ManagerialTeam(const ManagerialTeam& copyManagerialTeam) {
+	this->characteristics = copyManagerialTeam.characteristics;
+	this->areaRepresent = copyManagerialTeam.areaRepresent;
+	this->eventImpact = copyManagerialTeam.eventImpact;
+}
 
 // Methods
 void ManagerialTeam::eventHandle(float, float) {}

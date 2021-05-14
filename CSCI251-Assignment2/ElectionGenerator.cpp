@@ -12,9 +12,23 @@
 
 // Constructors
 ElectionGenerator::ElectionGenerator() {}
-ElectionGenerator::ElectionGenerator(vector<Event>, vector<Issue>, vector<float>) {}
-ElectionGenerator::~ElectionGenerator() {}
-ElectionGenerator::ElectionGenerator(const ElectionGenerator& copyElectionGenerator) {}
+
+ElectionGenerator::ElectionGenerator(vector<Event> _elecEvent, vector<Issue> _issues, vector<float> _partiesStanceRanges) {
+	this->elecEvent = _elecEvent;
+	this->issues = _issues;
+	this->partiesStanceRanges = _partiesStanceRanges;
+}
+
+ElectionGenerator::~ElectionGenerator() {
+	cout << "Object Destoryed!" << endl;
+}
+
+ElectionGenerator::ElectionGenerator(const ElectionGenerator& copyElectionGenerator) {
+	this->elecEvent = copyElectionGenerator.elecEvent;
+	this->issues = copyElectionGenerator.issues;
+	this->partiesStanceRanges = copyElectionGenerator.partiesStanceRanges;
+}
+
 
 // Methods
 Candidate ElectionGenerator::generateCandidate(string, vector<vector<float>>, string) {}

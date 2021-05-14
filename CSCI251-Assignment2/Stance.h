@@ -14,9 +14,9 @@
 
 class Stance {
 private:
-	float approach;
-	float significant;
-	float influentRadius;
+	float approach = 0;
+	float significant = 0;
+	float influentRadius = 0;
 	Issue issue;
 public:
 	Stance();

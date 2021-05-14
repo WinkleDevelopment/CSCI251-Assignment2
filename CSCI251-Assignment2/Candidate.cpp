@@ -13,11 +13,21 @@
 // Constructors
 Candidate::Candidate() {}
 
-Candidate::Candidate(map<Characteristic, float> characteristics, string areaRepresent, int) : Human(characteristics, areaRepresent) {}
+Candidate::Candidate(map<Characteristic, float> _characteristics, string _areaRepresent, int _voteCount) : Human(_characteristics, _areaRepresent) {
+	this->characteristics = _characteristics;
+	this->areaRepresent = _areaRepresent;
+	this->voteCount = _voteCount;
+}
 
-Candidate::~Candidate() {}
+Candidate::~Candidate() {
+	cout << "Object Destoryed!" << endl;
+}
 
-Candidate::Candidate(const Candidate& copyCandidate) {}
+Candidate::Candidate(const Candidate& copyCandidate) {
+	this->characteristics = copyCandidate.characteristics;
+	this->areaRepresent = copyCandidate.areaRepresent;
+	this->voteCount = copyCandidate.voteCount;
+}
 
 // Methods
 void Candidate::influenceElec(float) {}

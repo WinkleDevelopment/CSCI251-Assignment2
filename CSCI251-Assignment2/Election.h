@@ -13,7 +13,7 @@ private:
 	Campaign* campaign;
 public:
 	Election();
-	Election(const static unsigned int, unsigned int, vector<Party>, vector<Electorate>, Campaign*);
+	Election(unsigned int, vector<Party>, vector<Electorate>, Campaign*);
 	~Election();
 	Election(const Election& copyElection);
 

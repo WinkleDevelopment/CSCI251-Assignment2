@@ -14,10 +14,10 @@
 
 class Candidate : public Human {
 private:
-	int voteCount;
+	int voteCount = 0;
 public:
 	Candidate();
-	Candidate(map<Characteristic, float> characteristics, string areaRepresent, int) : Human(characteristics, areaRepresent) {}
+	Candidate(map<Characteristic, float> _characteristics, string _areaRepresent, int) : Human(_characteristics, _areaRepresent) {}
 	~Candidate();
 	Candidate(const Candidate& copyCandidate);
 	

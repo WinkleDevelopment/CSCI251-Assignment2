@@ -14,7 +14,7 @@
 
 class ManagerialTeam : public Human {
 private:
-	float eventImpact;
+	float eventImpact = 0;
 public:
 	ManagerialTeam();
 	ManagerialTeam(map<Characteristic, float> characteristics, string areaRepresent, float) : Human(characteristics, areaRepresent) {}
