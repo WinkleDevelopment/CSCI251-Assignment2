@@ -7,7 +7,6 @@
 *					 Assignment 2
 *
 */
-
 #include "Campaign.h"
 
 // Constructors
@@ -20,8 +19,8 @@ Campaign::~Campaign() {}
 Campaign::Campaign(const Campaign& copyCampaign) {}
 
 // Methods
-void Campaign::run(Election) {}
+void Campaign::run(Election*) {}
 
-void Campaign::runLocal(Election, Event, string) {}
+void Campaign::runLocal(Election*, Event, string) {}
 
-void Campaign::runNation(Election, Event) {}
+void Campaign::runNation(Election*, Event) {}

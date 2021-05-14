@@ -9,10 +9,10 @@
 */
 
 #pragma once
-#include "Libraries.h"
 #include "ElectionGenerator.h"
 #include "RandomEng.h"
-#include "Election.h"
+
+class Election;
 
 class Campaign {
 private:
@@ -27,8 +27,7 @@ public:
 	unsigned int getDuration() { return duration; }
 	unsigned int getcurrentDate() { return currentDate; }
 
-	void run(Election);
-	void runLocal(Election, Event, string);
-	void runNation(Election, Event);
+	void run(Election*);
+	void runLocal(Election*, Event, string);
+	void runNation(Election*, Event);
 };
-

@@ -27,12 +27,6 @@
     <ClInclude Include="ManagerialTeam.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Campaign.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Election.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Libraries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -57,6 +51,12 @@
     <ClInclude Include="ElectionGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Election.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Campaign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Party.cpp">
@@ -69,12 +69,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ManagerialTeam.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Campaign.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Election.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Event.cpp">
@@ -100,6 +94,12 @@
     </ClCompile>
     <ClCompile Include="RandomEng.h">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Election.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Campaign.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

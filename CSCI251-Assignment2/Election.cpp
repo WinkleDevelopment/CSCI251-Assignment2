@@ -13,20 +13,24 @@
 // Constructors
 Election::Election() {}
 
-Election::Election(const static unsigned int, unsigned int, vector<Party>, vector<Electorate>, Campaign) {}
+Election::Election(const static unsigned int, unsigned int, vector<Party>, vector<Electorate>, Campaign*) {}
 
 Election::~Election() {}
 
 Election::Election(const Election& copyElection) {}
 
+
 // Methods
 void Election::partyReport() {}
+
 void Election::electorateReport() {}
+
 void Election::electionreport() {}
 
 // Complie Method
 int main() {
 
+	cout << "Test Message" << endl;
 	return 1;
 
 }
