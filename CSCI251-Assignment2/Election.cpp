@@ -42,7 +42,11 @@ void Election::electionreport() {}
 // Complie Method
 int main() {
 
-	cout << "Test Message" << endl;
+	int testVari;
+
+	cout << "Test Message: ";
+	cin >> testVari;
+
 	return 1;
 
 }
